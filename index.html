@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo: Ciclo da Água</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 id="game-title">Ciclo da Água</h1>
+    <div class="header-controls">
+      <button id="btn-contrast" class="btn btn-secondary" aria-pressed="false" title="Alternar alto contraste">Alto contraste</button>
+      <button id="btn-audio" class="btn btn-secondary" aria-pressed="true" title="Alternar sons">Sons: on</button>
+    </div>
+  </header>
+
+  <main id="app" class="app-container">
+    <!-- TELA INICIAL -->
+    <section id="screen-start" class="screen active" aria-labelledby="title-start">
+      <h2 id="title-start" class="sr-only">Tela inicial</h2>
+      <div class="start-card">
+        <div class="instructions" role="region" aria-label="Instruções de como jogar">
+          <h3>💡 Como jogar</h3>
+          <ul>
+            <li><strong>Mouse:</strong> arraste a descrição até o nome correto.</li>
+            <li><strong>Teclado:</strong> use Tab para navegar, Enter ou Espaço para selecionar e confirmar.</li>
+            <li><strong>Toque:</strong> toque e segure uma descrição, arraste até o alvo correto.</li>
+          </ul>
+        </div>
+        <p class="subtitle" id="game-subtitle">Capítulo</p>
+        <button id="btn-start" class="btn btn-primary">Iniciar</button>
+        <p class="hint">Arraste as descrições para os nomes corretos ou use clique para selecionar e associar.</p>
+      </div>
+    </section>
+
+    <!-- TELA DO JOGO -->
+    <section id="screen-game" class="screen" aria-labelledby="title-game" aria-live="polite">
+      <h2 id="title-game" class="sr-only">Tela do jogo</h2>
+
+      <div class="status-bar">
+        <div class="status-item" role="status">Pontuação: <span id="score">0</span></div>
+        <div class="status-item" role="status">Restantes: <span id="remaining">0</span></div>
+        <div class="status-item">Tempo: <span id="timer">00:00</span></div>
+      </div>
+
+      <div class="board">
+        <section class="targets" aria-label="Alvos (etapas do ciclo)">
+          <!-- targets dinamicamente -->
+        </section>
+
+        <section class="pool" aria-label="Descrições para associar">
+          <!-- draggables dinamicamente -->
+        </section>
+      </div>
+
+      <div class="actions">
+        <button id="btn-reiniciar" class="btn btn-secondary">Reiniciar</button>
+      </div>
+
+      <div id="live-feedback" class="sr-only" role="status" aria-live="assertive"></div>
+    </section>
+
+    <!-- TELA FINAL -->
+    <section id="screen-end" class="screen" aria-labelledby="title-end">
+      <h2 id="title-end" class="sr-only">Tela de resultados</h2>
+      <div class="end-card">
+        <p class="result-line">Parabéns! Você concluiu o jogo.</p>
+        <p class="result-line">Pontuação final: <strong id="final-score">0</strong></p>
+        <p class="result-line">Tempo: <strong id="final-time">00:00</strong></p>
+        <div class="end-actions">
+          <button id="btn-play-again" class="btn btn-primary">Jogar novamente</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Feito com JS puro. Acessível por mouse, toque e teclado.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

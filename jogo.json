@@ -1,0 +1,21 @@
+{
+  "titulo": "Capítulo 3 - O Ciclo da Água",
+  "etapas": [
+    {
+      "nome": "Evaporação",
+      "descricao": "A água presente na superfície dos rios, lagos e oceanos se aquece com a luz do sol e se transforma em vapor, subindo para a atmosfera."
+    },
+    {
+      "nome": "Condensação",
+      "descricao": "O vapor de água sobe e, ao encontrar camadas frias da atmosfera, se resfria, formando as nuvens."
+    },
+    {
+      "nome": "Precipitação",
+      "descricao": "Quando as nuvens estão carregadas de vapor, a água retorna à superfície da Terra em forma de chuva, neve ou granizo."
+    },
+    {
+      "nome": "Infiltração",
+      "descricao": "Parte da água da precipitação penetra no solo, abastecendo os lençóis freáticos e alimentando nascentes e aquíferos."
+    }
+  ]
+}
