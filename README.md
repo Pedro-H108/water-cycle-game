@@ -1,3 +1,5 @@
+Jogue online clicando no link [AQUI](https://pedro-h108.github.io/water-cycle-game/)
+---
 # Jogo Educativo — Ciclo da Água (JS Puro)
 
 Este projeto implementa o teste prático proposto: um ODA simples onde o aluno associa **descrições** às **etapas do ciclo da água**. O jogo é **dinâmico**, lendo os dados a partir de `jogo.json`, e segue boas práticas de organização, acessibilidade e código limpo.
